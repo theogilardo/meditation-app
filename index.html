@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Meditation App</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <script src="https://kit.fontawesome.com/e8ea84e5d8.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <video autoplay muted loop id="video" src="img/night.mp4" type="video/mp4"></video>
+  <div class="set-time">
+      <button id="2-min" class="btn">2 Minutes</button>
+      <button id="5-min" class="btn">5 Minutes</button>
+      <button id="10-min" class="btn">10 Minutes</button>
+  </div>
+  <div class="loader">
+      <svg class="progress-ring" width="480" height="480">
+        <circle class="progress-ring__circle" cx="240" cy="240" r="232" stroke="white" stroke-width="4" fill="transparent" />
+        <div class="progress-ring__control">
+            <a href="#"><i id="pause" class="icon-timer fas fa-pause hidden"></i></a>
+            <a href="#"><i id="play" class="icon-timer fas fa-play"></i></a>
+        </div>
+      </svg>
+      <div id="timer" class="timer"></div>
+  </div>
+  <div id="weather" class="set-weather">
+      <a class="test-weather" id="sun-a" href="#">
+        <i id="sun" data-mood="sun" class="icon-weather fas fa-sun"></i>
+        <audio id="sun-sample" src="img/sun.mp3"></audio>
+      </a>
+      <a class="test-weather" id="rain-a" href="#">
+        <i id="rain" data-mood="rain" class="icon-weather fas fa-cloud-showers-heavy"></i>
+        <audio id="rain-sample" src="img/rain.mp3"></audio>
+      </a>
+      <a class="test-weather" id="night-a" data-mood="night" href="#">
+        <i id="night" data-mood="night" class="icon-weather fas fa-moon"></i>
+        <audio id="night-sample" src="img/night.mp3"></audio>
+      </a>
+  </div>
+
+  <script src="script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  background-size: cover;
+}
+
+video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.set-time {
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.set-time button:first-child {
+  margin-top: 10rem;
+}
+
+.set-time button:last-child {
+  margin-bottom: 10rem;
+}
+
+.loader {
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icon-timer {
+  font-size: 8rem;
+  color: white;
+}
+
+.loader__circle {
+  position: relative;
+}
+
+.timer {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  color: white;
+}
+
+.set-weather {
+  width: 33.33%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.set-weather a:first-child {
+  background-color: #fdce2ecc;
+}
+
+.set-weather a:nth-child(2) {
+  background-color: #67aadccc;
+}
+
+.set-weather a:last-child {
+  background-color: #49627ccc;
+}
+
+.active {
+  border: 2px solid white;
+}
+
+.set-weather a {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 2rem 0;
+}
+
+.icon-weather {
+  font-size: 8rem;
+  color: white;
+  padding: 3rem;
+}
+
+.btn {
+  padding: 1.5rem 4rem;
+  border: 2px solid white;
+  font-size: 3rem;
+  color: white;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #333;
+  opacity: .6;
+}
+
+.hidden {
+  display: none;
+}
+
+.progress-ring {
+  position: relative;
+}
+
+.progress-ring__control {
+  position: absolute;
+  z-index: 200;
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+
+
+
+
+
+
+
