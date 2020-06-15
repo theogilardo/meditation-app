@@ -1,6 +1,18 @@
 
-:root {
+html {
   font-size: 62.5%;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 30%;
+  }
 }
 
 * {
@@ -36,12 +48,33 @@ video {
   flex-direction: column;
 }
 
+@media screen and (max-width: 420px) {
+  .set-time {
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    top: 10%;
+  }
+}
+
 .set-time button:first-child {
   margin-top: 10rem;
 }
 
+@media screen and (max-width: 420px) {
+  .set-time button:first-child {
+    margin-top: 0;
+  }
+}
+
 .set-time button:last-child {
   margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 420px) {
+  .set-time button:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .loader {
@@ -68,11 +101,17 @@ video {
 
 .timer {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 5rem;
   color: white;
+}
+
+@media screen and (max-width: 420px) {
+  .timer {
+    bottom: 40%;
+  }
 }
 
 .set-weather {
@@ -85,6 +124,15 @@ video {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+@media screen and (max-width: 420px) {
+  .set-weather {
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+    top: -5%;
+  }
 }
 
 .set-weather a:first-child {
@@ -107,6 +155,13 @@ video {
   display: inline-block;
   border-radius: 50%;
   margin: 2rem 0;
+}
+
+@media screen and (max-width: 420px) {
+  .set-weather a {
+    margin: 0 2rem;
+
+  }
 }
 
 .icon-weather {
@@ -155,6 +210,12 @@ video {
   transform-origin: 50% 50%;
 }
 
+@media screen and (max-width: 420px) {
+  svg {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 
 

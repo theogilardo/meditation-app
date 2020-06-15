@@ -68,7 +68,7 @@ testWeather.forEach(element => {
 // ADD EVENT LISTENERS
 
 // Timer edit
-twoMin.addEventListener('click', () => changeTime(120));
+twoMin.addEventListener('click', () => changeTime(12));
 fiveMin.addEventListener('click', () => changeTime(300));
 tenMin.addEventListener('click', () => changeTime(600));
 
