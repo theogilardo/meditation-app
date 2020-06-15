@@ -183,7 +183,7 @@ video {
 
 @media screen and (max-width: 420px) {
   .btn {
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2.5rem;
   }
 }
 
