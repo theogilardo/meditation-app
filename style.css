@@ -55,6 +55,7 @@ video {
     width: 100%;
     align-items: flex-start;
     margin-top: 10rem;
+    height: 10%;
   }
 }
 
@@ -132,6 +133,8 @@ video {
     flex-direction: row;
     width: 100%;
     align-items: flex-end;
+    height: 10%;
+    top: 85%;
   }
 }
 
