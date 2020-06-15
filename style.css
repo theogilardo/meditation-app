@@ -12,6 +12,7 @@ html {
 @media screen and (max-width: 420px) {
   html {
     font-size: 30%;
+    overflow-y: hidden;
   }
 }
 
@@ -53,7 +54,7 @@ video {
     flex-direction: row;
     width: 100%;
     align-items: flex-start;
-    top: 10%;
+    margin-top: 10rem;
   }
 }
 
@@ -131,7 +132,6 @@ video {
     flex-direction: row;
     width: 100%;
     align-items: flex-end;
-    top: -5%;
   }
 }
 
@@ -159,7 +159,7 @@ video {
 
 @media screen and (max-width: 420px) {
   .set-weather a {
-    margin: 0 2rem;
+    margin: 0 2rem 8rem 2rem;
 
   }
 }
@@ -179,6 +179,12 @@ video {
   border-radius: 4px;
   cursor: pointer;
   transition: all .5s;
+}
+
+@media screen and (max-width: 420px) {
+  .btn {
+    padding: 1.5rem 2.5rem;
+  }
 }
 
 .btn:focus {
@@ -201,7 +207,7 @@ video {
 
 .progress-ring__control {
   position: absolute;
-  z-index: 200;
+  z-index: 2000;
 }
 
 .progress-ring__circle {
